@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    width: 1920px;
+    height: 520px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.shape {
+    width: 257px;
+    height: 231px;
+    position: fixed;
+    gap: 0px;
+    opacity: 0px;
+    z-index: -9999;
+}
+
+.Sentence1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+}
+
+.wordLearning {
+    width: 213.89px;
+    height: 56px;
+    top: 65px;
+    left: 244.09px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    background-image: url("../images/heading1.png");
+
+}
