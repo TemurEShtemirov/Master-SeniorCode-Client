@@ -60,7 +60,7 @@ export default function Layout() {
                                 textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                                 fontFamily={'heading'}
                                 color={useColorModeValue('gray.800', 'white')}>
-                                <code className='logo'>{"<Senior Code/>"}</code>
+                                <code className='logo'><strong>{"<Senior Code/>"}</strong></code>
                             </Text>
                         </NavLink>
                         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

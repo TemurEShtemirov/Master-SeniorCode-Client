@@ -8,6 +8,7 @@
     width: 1920px;
     height: 520px;
     gap: 0px;
+    margin: 0;
     opacity: 0px;
 }
 
@@ -15,12 +16,55 @@
     width: 257px;
     height: 231px;
     position: fixed;
-    gap: 0px;
     opacity: 0px;
     z-index: -9999;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-container>* {
+    margin-right: 20px;
+}
+
+.grid-container>*:nth-child(2n) {
+    margin-right: 0;
+}
+
+.grid1Box {
+    height: 433px;
+    margin-left: 150px;
+    margin-top: 150px;
+    width: 600px;
+    animation-name: gridBoxAnim;
+    animation-duration: 2s;
+}
+
+@keyframes gridBoxAnim {
+    from {
+        margin-left: -500px;
+        transition: 1s;
+    }
+
+    to {
+        margin-left: 150px;
+        transition: 1s;
+    }
+}
+
+
+
+
 .Sentence1 {
+    width: 501.67px;
+    height: 120px;
+    top: 60px;
+    left: 15px;
+    gap: 0px;
+    opacity: 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 500;
@@ -31,6 +75,7 @@
 .wordLearning {
     width: 213.89px;
     height: 56px;
+    position: fixed;
     top: 65px;
     left: 244.09px;
     padding: 0px;
@@ -41,6 +86,1375 @@
     font-weight: 700;
     line-height: 60px;
     text-align: left;
+    margin-left: 135px;
+    margin-top: 150px;
+    padding-left: 15px;
+    animation-name: wordLearn1ngAnim;
+    animation-duration: 2s;
     background-image: url("../images/heading1.png");
+}
 
+@keyframes wordLearn1ngAnim {
+    from {
+        margin-top: 500px;
+        transition: 1s;
+        opacity: 20%;
+    }
+
+    to {
+        margin-top: 150px;
+        transition: 1s;
+    }
+}
+
+.text1 {
+    width: 470.56px;
+    height: 57.6px;
+    top: -0.9px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(109, 108, 128, 1);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.btn1 {
+    width: 202.22px;
+    height: 49.91px;
+    top: 283.59px;
+    left: 15px;
+    margin-top: -470px;
+    padding: 15.54px 30px 16.45px 30px;
+    gap: 0px;
+    opacity: 0px;
+    transition: 0.6s;
+    background-color: rgba(87, 81, 225, 1);
+    border-radius: 20.54px 40px 20.45px 40px;
+}
+
+.btn1:hover {
+    width: 202.22px;
+    height: 49.91px;
+    top: 283.59px;
+    left: 15px;
+    margin-top: -470px;
+    padding: 15.54px 30px 16.45px 30px;
+    gap: 0px;
+    border-radius: 20.54px 40px 20.45px 40px;
+    opacity: 0px;
+    box-shadow: 4px 6px 0px 0px rgba(5, 0, 113, 1);
+}
+
+.custom-grid-box {
+    width: 720px;
+    height: 460px;
+    margin-top: 90px;
+    margin-left: -250px;
+    gap: 0;
+    animation-name: gr1dbox-anim;
+    animation-duration: 2s;
+}
+
+@keyframes gr1dbox-anim {
+    from {
+        margin-left: 1200px;
+        transition: 1s;
+        position: fixed;
+    }
+
+    to {
+        margin-left: 720px;
+        transition: 1s;
+        position: fixed;
+
+    }
+}
+
+@media screen and (max-width:1448px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 540px;
+        height: auto;
+        margin-left: 160px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 160px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 10;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-top: 500px;
+            transition: 1s;
+            opacity: 20%;
+        }
+
+        to {
+            margin-top: 150px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: fixed;
+        margin: 0;
+        max-width: 620px;
+        left: 700px;
+        top: 150px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+            position: fixed;
+        }
+
+        to {
+            left: 700px;
+            transition: 1s;
+            position: fixed;
+
+        }
+    }
+}
+
+@media screen and (max-width:1332px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 440px;
+        height: auto;
+        margin-left: 160px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 160px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 10;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 10;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: fixed;
+        margin: 0;
+        max-width: 520px;
+        left: 700px;
+        top: 190px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+            position: fixed;
+        }
+
+        to {
+            left: 50px;
+            transition: 1s;
+            position: fixed;
+
+        }
+    }
+}
+
+@media screen and (max-width:1226px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 160px;
+        top: -20px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 160px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 10;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 10;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: fixed;
+        margin: 0;
+        max-width: 480px;
+        left: 700px;
+        top: 190px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+            position: fixed;
+        }
+
+        to {
+            left: 0px;
+            transition: 1s;
+            position: fixed;
+
+        }
+    }
+}
+
+@media screen and (max-width:1184) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 420px;
+        height: auto;
+        margin-left: 160px;
+        top: -20px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 160px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 10;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 10;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: fixed;
+        margin: 0;
+        max-width: 470px;
+        left: 680px;
+        top: 170px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-right: 500px;
+            transition: 1s;
+            position: fixed;
+        }
+
+        to {
+            margin-left: 680px;
+            transition: 1s;
+            position: fixed;
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 160px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 160px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 10;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 10;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 620px;
+        left: 50px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 50px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:682px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 100px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 100px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 70px;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 70px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 620px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:645px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 80px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 80px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 50px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 580px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:610px) {
+
+    .shape {
+        width: 220px;
+        height: 220px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 90px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 90px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 65px;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 65px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 570px;
+        left: 15px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 15px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:586px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 75px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 75px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 50px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 500px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:525px) {
+
+    .shape {
+        width: 250px;
+        height: 250px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 380px;
+        height: auto;
+        margin-left: 50px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 50px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 65px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 150px;
+        padding-left: 15px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 20px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 60px;
+        max-width: 400px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 460px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .shape {
+        width: 190px;
+        height: 190px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 50px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 50px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        font-size: 30px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 60px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: -35px;
+        margin-top: 150px;
+        padding-left: 35px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: -35px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 420px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:432px) {
+
+    .shape {
+        width: 180px;
+        height: 180px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 40px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 40px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        font-size: 27px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 213.89px;
+        height: 56px;
+        position: absolute;
+        top: 60px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: -65px;
+        margin-top: 150px;
+        padding-left: 35px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: -65px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        max-width: 390px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 380px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (max-width:395px) {
+
+    .shape {
+        width: 170px;
+        height: 170px;
+        z-index: -9999;
+    }
+
+    .grid1Box {
+        width: 400px;
+        height: auto;
+        margin-left: 30px;
+        animation-name: gr1d1Box;
+        animation-duration: 2s;
+    }
+
+    @keyframes gr1d1Box {
+        from {
+            margin-left: -500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: 30px;
+            transition: 1s;
+        }
+    }
+
+    .Sentence1 {
+        width: 400px;
+        height: 120px;
+        font-size: 25.5px;
+        top: 60px;
+        left: 15px;
+    }
+
+    .wordLearning {
+        width: 190px;
+        height: 53px;
+        border-radius: 10px;
+        position: absolute;
+        top: 60px;
+        left: 244.09px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Poppins',
+            sans-serif;
+        font-size: 25.5px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+        margin-left: -80px;
+        margin-top: 150px;
+        padding-left: 35px;
+        background-image: url("../images/heading1.png");
+        animation-name: wordLearnAnimet;
+        animation-duration: 2s;
+    }
+
+    @keyframes wordLearnAnimet {
+        from {
+            margin-left: 500px;
+            transition: 1s;
+        }
+
+        to {
+            margin-left: -80px;
+            transition: 1s;
+        }
+    }
+
+    .text1 {
+        max-width: 380px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .custom-grid-box {
+        position: absolute;
+        margin: 0;
+        max-width: 340px;
+        left: 20px;
+        top: 650px;
+        animation-name: custom-grid-box-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes custom-grid-box-animate {
+        from {
+            margin-left: 800px;
+            transition: 1s;
+        }
+
+        to {
+            left: 20px;
+            transition: 1s;
+        }
+    }
 }
