@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Center, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Grid, GridItem, Image, Text } from '@chakra-ui/react';
 import GridImage from '../../assets/images/div.col-lg-6.png';
 import Card1Image from '../../assets/images/div.features__icon-two.png'
 import Card2Image from '../../assets/images/div.features__icon-two(1).png'
@@ -18,6 +18,9 @@ export default function Home() {
       title: "Expert Tutors",
       sub: `when an unknown printer took a galley offe
 type and scrambled makes.`,
+      bg: " rgba(241, 253, 255, 1)",
+      shadow: "8px 8px 0px 0px rgba(201, 228, 233, 1)",
+      border: "rgba(201, 228, 233, 1)"
     },
     {
       id: 2,
@@ -25,12 +28,19 @@ type and scrambled makes.`,
       title: `Effective Courses`,
       sub: `when an unknown printer took a galley offe
 type and scrambled makes.`,
-    }, {
+      bg: "rgba(237, 234, 255, 1)",
+      shadow: "8px 8px 0px 0px rgba(217, 213, 241, 1)",
+      border: "rgba(200, 193, 237, 1)"
+    },
+    {
       id: 3,
       image: Card3Image,
       title: `Earn Certificate`,
       sub: `when an unknown printer took a galley offe
 type and scrambled makes.`,
+      bg: "rgba(255, 247, 226, 1)",
+      shadow: "8px 8px 0px 0px rgba(229, 222, 203, 1)",
+      border: "rgba(235, 224, 196, 1)"
     }
   ]
 
@@ -68,16 +78,34 @@ type and scrambled makes.`,
                 specimen book has survived not only five centuries
               </Text>
             </Box>
-            <Box>
-              {card.map((item) => (
-                <Box id='boxCard' key={item.id}>
-<Text id='title-card'></Text>
-                </Box>
-              ))
 
-              }
-            </Box>
           </Center>
+          <Grid templateColumns="repeat(3, 1fr)" marginTop="50px" gap={5}>
+            {card.map((item) => (
+              <GridItem
+                key={item.id}
+                width="450px"
+                height="226px"
+                marginLeft={5}
+                padding={5}
+                borderRadius="20px"
+                border={item.border}
+                background={item.bg}
+                _hover={{
+                  transition: 'all 0.6s',
+                  marginBottom: '10px',
+                  boxShadow: item.shadow,
+                }}
+              >
+                <Box display="flex" marginBottom="10px">
+                  <Image src={item.image} alt="" />
+                  <Image src={Shine} marginLeft="300px" w="49px" h="37px" alt="" />
+                </Box>
+                <Text id="title-card">{item.title}</Text>
+                <Text id="sub-card">{item.sub}</Text>
+              </GridItem>
+            ))}
+          </Grid>
         </Box>
       </section>
     </Box>

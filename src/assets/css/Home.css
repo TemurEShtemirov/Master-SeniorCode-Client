@@ -521,20 +521,6 @@
 
 }
 
-#boxCard {
-    width: 450px;
-    height: 226px;
-    top: 204.78px;
-    left: 15px;
-    gap: 0px;
-    border-radius: 20px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    background: rgba(241, 253, 255, 1);
-    border: 1px solid rgba(201, 228, 233, 1);
-    box-shadow: 8px 8px 0px 0px rgba(201, 228, 233, 1);
-
-}
 
 @media screen and (max-width:1184) {
 
