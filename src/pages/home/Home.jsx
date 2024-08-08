@@ -4,10 +4,12 @@ import GridImage from '../../assets/images/div.col-lg-6.png';
 import Card1Image from '../../assets/images/div.features__icon-two.png'
 import Card2Image from '../../assets/images/div.features__icon-two(1).png'
 import Card3Image from '../../assets/images/div.features__icon-two(2).png'
+import Bro from '../../assets/images/bro.png'
 import Shine from "../../assets/images/shine.png"
 import { SimpleGrid } from '@chakra-ui/react';
 import '../../assets/css/Home.css';
 import Shape from '../../assets/images/banner_shape01.svg.png';
+import { px } from 'framer-motion';
 
 export default function Home() {
 
@@ -65,7 +67,7 @@ type and scrambled makes.`,
         <Box>
           <Center>
 
-            <Box position={"relative"} >
+            <Box position={"relative"} className='BoxSection2'>
               <Text id='section2Box1Txt1'>Our Top Features</Text>
               <Text id='txt2sct2bx1'
                 fontSize="36px"
@@ -80,7 +82,14 @@ type and scrambled makes.`,
             </Box>
 
           </Center>
-          <Grid templateColumns="repeat(3, 1fr)" marginTop="50px" gap={5}>
+          <Grid
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+            marginTop="50px"
+            gap={5}
+            className='grid1'
+            width="100%"
+          >
+
             {card.map((item) => (
               <GridItem
                 key={item.id}
@@ -92,10 +101,12 @@ type and scrambled makes.`,
                 border={item.border}
                 background={item.bg}
                 _hover={{
-                  transition: 'all 0.6s',
+                  transition: 'all 0.8s',
                   marginBottom: '10px',
                   boxShadow: item.shadow,
                 }}
+
+
               >
                 <Box display="flex" marginBottom="10px">
                   <Image src={item.image} alt="" />
@@ -107,6 +118,14 @@ type and scrambled makes.`,
             ))}
           </Grid>
         </Box>
+      </section>
+      <section>
+        <Grid templateColumns="repeat(2, 1fr)" marginTop="50px" gap={5}>
+          <GridItem>
+            <Image src={Bro} alt='Bro' className='bro' />
+          </GridItem>
+          <GridItem></GridItem>
+        </Grid>
       </section>
     </Box>
   );

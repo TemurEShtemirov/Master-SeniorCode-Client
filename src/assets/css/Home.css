@@ -75,7 +75,7 @@
 .wordLearning {
     width: 213.89px;
     height: 56px;
-    position: fixed;
+    position: absolute;
     top: 65px;
     left: 244.09px;
     padding: 0px;
@@ -172,6 +172,8 @@
 
     }
 }
+
+
 
 @media screen and (max-width:1448px) {
 
@@ -272,6 +274,8 @@
 
         }
     }
+
+
 }
 
 @media screen and (max-width:1332px) {
@@ -703,6 +707,7 @@
         max-width: 620px;
         left: 50px;
         top: 650px;
+        bottom: 100px;
         animation-name: custom-grid-box-animate;
         animation-duration: 2s;
     }
@@ -716,7 +721,12 @@
         to {
             left: 50px;
             transition: 1s;
+            bottom: 100px;
         }
+    }
+
+    .BoxSection2 {
+        margin-top: 420px;
     }
 }
 
@@ -815,6 +825,8 @@
             transition: 1s;
         }
     }
+
+
 }
 
 @media screen and (max-width:645px) {
@@ -1204,7 +1216,14 @@
             transition: 1s;
         }
     }
+
+    .bro {
+        max-width: 340px;
+        margin-left: 90px;
+    }
 }
+
+
 
 @media screen and (max-width:480px) {
 
