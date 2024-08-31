@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "img": "https://365datascience.com/resources/blog/2019-12-how-to-import-data-into-python.jpg",
+    "title": "Introduction to Python",
+    "price": 99.99,
+    "category": "Programming",
+    "teacher": {
+      "img": "teacher1.jpg",
+      "full_name": "John Doe",
+      "grade": 4.8
+    },
+    "lessons_quantity": 24,
+    "duration": "12 hours",
+    "graduation_quantity": 1500
+  },
+  {
+    "id": 2,
+    "img": "course2.jpg",
+    "title": "Digital Marketing Basics",
+    "price": 79.99,
+    "category": "Marketing",
+    "teacher": {
+      "img": "teacher2.jpg",
+      "full_name": "Jane Smith",
+      "grade": 4.7
+    },
+    "lessons_quantity": 18,
+    "duration": "9 hours",
+    "graduation_quantity": 1200
+  },
+  {
+    "id": 3,
+    "img": "course3.jpg",
+    "title": "Advanced JavaScript",
+    "price": 119.99,
+    "category": "Web Development",
+    "teacher": {
+      "img": "teacher3.jpg",
+      "full_name": "Alice Brown",
+      "grade": 4.9
+    },
+    "lessons_quantity": 30,
+    "duration": "15 hours",
+    "graduation_quantity": 2000
+  },
+  {
+    "id": 4,
+    "img": "course4.jpg",
+    "title": "Graphic Design Masterclass",
+    "price": 89.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher4.jpg",
+      "full_name": "Michael Green",
+      "grade": 4.6
+    },
+    "lessons_quantity": 20,
+    "duration": "10 hours",
+    "graduation_quantity": 1400
+  },
+  {
+    "id": 5,
+    "img": "course5.jpg",
+    "title": "fthyjuujhgt2",
+    "price": 149.99,
+    "category": "Programming",
+    "teacher": {
+      "img": "teacher5.jpg",
+      "full_name": "Emily White",
+      "grade": 4.7
+    },
+    "lessons_quantity": 32,
+    "duration": "16 hours",
+    "graduation_quantity": 2500
+  },
+  {
+    "id": 6,
+    "img": "course6.jpg",
+    "title": "Introduction to Data Science",
+    "price": 129.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher6.jpg",
+      "full_name": "David Wilson",
+      "grade": 4.8
+    },
+    "lessons_quantity": 28,
+    "duration": "14 hours",
+    "graduation_quantity": 1800
+  },
+  {
+    "id": 7,
+    "img": "course7.jpg",
+    "title": "Photography for Beginners",
+    "price": 59.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher7.jpg",
+      "full_name": "Sophia Johnson",
+      "grade": 4.5
+    },
+    "lessons_quantity": 15,
+    "duration": "7 hours",
+    "graduation_quantity": 1000
+  },
+  {
+    "id": 8,
+    "img": "course8.jpg",
+    "title": "Introduction to Artificial Intelligence",
+    "price": 139.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher8.jpg",
+      "full_name": "Robert Lee",
+      "grade": 4.9
+    },
+    "lessons_quantity": 30,
+    "duration": "15 hours",
+    "graduation_quantity": 2100
+  },
+  {
+    "id": 9,
+    "img": "course9.jpg",
+    "title": "Content Writing Masterclass",
+    "price": 69.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher9.jpg",
+      "full_name": "Olivia Martinez",
+      "grade": 4.7
+    },
+    "lessons_quantity": 20,
+    "duration": "10 hours",
+    "graduation_quantity": 1300
+  },
+  {
+    "id": 10,
+    "img": "course10.jpg",
+    "title": "ffoirhgikr",
+    "price": 119.99,
+    "category": "Programming",
+    "teacher": {
+      "img": "teacher10.jpg",
+      "full_name": "James Brown",
+      "grade": 4.6
+    },
+    "lessons_quantity": 26,
+    "duration": "13 hours",
+    "graduation_quantity": 1600
+  },
+  {
+    "id": 11,
+    "img": "course11.jpg",
+    "title": "Introduction to Machine Learning",
+    "price": 139.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher11.jpg",
+      "full_name": "Amelia Davis",
+      "grade": 4.8
+    },
+    "lessons_quantity": 28,
+    "duration": "14 hours",
+    "graduation_quantity": 2000
+  },
+  {
+    "id": 12,
+    "img": "course12.jpg",
+    "title": "Social Media Marketing",
+    "price": 79.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher12.jpg",
+      "full_name": "Benjamin Clark",
+      "grade": 4.5
+    },
+    "lessons_quantity": 18,
+    "duration": "9 hours",
+    "graduation_quantity": 1200
+  },
+  {
+    "id": 13,
+    "img": "course13.jpg",
+    "title": "Cybersecurity Essentials",
+    "price": 149.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher13.jpg",
+      "full_name": "Charlotte Lewis",
+      "grade": 4.9
+    },
+    "lessons_quantity": 32,
+    "duration": "16 hours",
+    "graduation_quantity": 2500
+  },
+  {
+    "id": 14,
+    "img": "course14.jpg",
+    "title": "Full Stack Web Development",
+    "price": 199.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher14.jpg",
+      "full_name": "Lucas Walker",
+      "grade": 4.7
+    },
+    "lessons_quantity": 40,
+    "duration": "20 hours",
+    "graduation_quantity": 3000
+  },
+  {
+    "id": 15,
+    "img": "course15.jpg",
+    "title": "UI/UX Design Fundamentals",
+    "price": 89.99,
+    "category": "Programming",
+    "teacher": {
+      "img": "teacher15.jpg",
+      "full_name": "Mia Young",
+      "grade": 4.6
+    },
+    "lessons_quantity": 22,
+    "duration": "11 hours",
+    "graduation_quantity": 1400
+  },
+  {
+    "id": 16,
+    "img": "course16.jpg",
+    "title": "Introduction to Cloud Computing",
+    "price": 129.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher16.jpg",
+      "full_name": "Daniel King",
+      "grade": 4.8
+    },
+    "lessons_quantity": 28,
+    "duration": "14 hours",
+    "graduation_quantity": 1800
+  },
+  {
+    "id": 17,
+    "img": "course17.jpg",
+    "title": "Public Speaking and Presentation Skills",
+    "price": 59.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher17.jpg",
+      "full_name": "Isabella Scott",
+      "grade": 4.7
+    },
+    "lessons_quantity": 16,
+    "duration": "8 hours",
+    "graduation_quantity": 1100
+  },
+  {
+    "id": 18,
+    "img": "course18.jpg",
+    "title": "Introduction to Blockchain",
+    "price": 149.99,
+    "category": "Digital Marketing Basics",
+    "teacher": {
+      "img": "teacher18.jpg",
+      "full_name": "Matthew Harris",
+      "grade": 4.9
+    },
+    "lessons_quantity": 30,
+    "duration": "15 hours",
+    "graduation_quantity": 2100
+  },
+  {
+    "id": 19,
+    "img": "course19.jpg",
+    "title": "Creative Writing Workshop",
+    "price": 79.99,
+    "category": "Advanced JavaScript",
+    "teacher": {
+      "img": "teacher19.jpg",
+      "full_name": "Emma Robinson",
+      "grade": 4.6
+    },
+    "lessons_quantity": 18,
+    "duration": "9 hours",
+    "graduation_quantity": 1200
+  },
+  {
+    "id": 20,
+    "img": "course20.jpg",
+    "title": "Excel for Data Analysis",
+    "price": 69.99,
+    "category": "Programming",
+    "teacher": {
+      "img": "teacher20.jpg",
+      "full_name": "William Thompson",
+      "grade": 4.8
+    },
+    "lessons_quantity": 20,
+    "duration": "10 hours",
+    "graduation_quantity": 1500
+  }
+]

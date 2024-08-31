@@ -173,6 +173,29 @@
     }
 }
 
+.courses {
+    width: 213.89px;
+    height: 56px;
+    top: 65px;
+    left: 244.09px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-left: 15px;
+    background-image: url("../images/heading1.png");
+    background-repeat: no-repeat;
+}
+
+
 
 
 @media screen and (max-width:1448px) {
@@ -725,7 +748,8 @@
         }
     }
 
-    .BoxSection2 {
+    .BoxSection2,
+    .Box2Section2 {
         margin-top: 420px;
     }
 }
@@ -1221,6 +1245,10 @@
         max-width: 340px;
         margin-left: 90px;
     }
+
+    .grid1 {
+        margin-left: 50px;
+    }
 }
 
 
@@ -1411,6 +1439,15 @@
         animation-duration: 2s;
     }
 
+    .child-grid1 {
+        margin-left: -30px;
+
+    }
+
+    .child-box {
+        width: 370px;
+    }
+
     @keyframes custom-grid-box-animate {
         from {
             margin-left: 800px;
@@ -1422,6 +1459,8 @@
             transition: 1s;
         }
     }
+
+
 }
 
 @media screen and (max-width:395px) {

@@ -57,7 +57,7 @@ export default function Layout() {
                     <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
                         <NavLink to={"/"} >
                             <Text
-                                textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                                textAlign={useBreakpointValue({ base: 'center', md: 'left' })} 
                                 fontFamily={'heading'}
                                 color={useColorModeValue('gray.800', 'white')}>
                                 <code className='logo'><strong>{"<Senior Code/>"}</strong></code>
